@@ -1,0 +1,159 @@
+/* styles.css */
+
+/* ===== Global Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.6;
+  background: #f6f9fc;
+  color: #222;
+}
+
+/* ===== Header ===== */
+header {
+  background: #2a2d6c;
+  color: #34d73c;
+  padding: 36px 0 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(60, 60, 120, 0.07);
+}
+
+header img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-top: 8px;
+  color: #fff;
+}
+
+/* ===== Navigation ===== */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(80, 80, 160, 0.06);
+  padding: 6px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+nav a {
+  text-decoration: none;
+  color: #334;
+  font-weight: 600;
+  margin: 0 18px;
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease-in-out;
+}
+
+nav a:hover,
+nav a.active {
+  border-bottom: 2px solid #2a2d6c;
+  color: #2a2d6c;
+}
+
+/* ===== Main Content Area ===== */
+main {
+  max-width: 850px;
+  margin: 32px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(80, 80, 160, 0.13);
+  padding: 44px 32px;
+}
+
+h2 {
+  color: #2a2d6c;
+  margin-bottom: 18px;
+  font-size: 1.5rem;
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: 16px;
+  color: #444;
+}
+
+/* ===== Contact Page Specific ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  background: #2a2d6c;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #1e2050;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 18px;
+  background: #2a2d6c;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  border-radius: 12px 12px 0 0;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  main {
+    padding: 24px 18px;
+    margin: 20px;
+  }
+
+  nav a {
+    margin: 0 12px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header img {
+    width: 90px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 6px 10px;
+  }
+}
